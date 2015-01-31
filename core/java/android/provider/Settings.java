@@ -3671,6 +3671,14 @@ public final class Settings {
         @Deprecated
         public static final String WIFI_WATCHDOG_PING_TIMEOUT_MS =
             Secure.WIFI_WATCHDOG_PING_TIMEOUT_MS;
+
+        /**
+         * boolean value. toggles using arrow key locations on nav bar
+         * as left and right dpad keys
+         * @hide
+         */
+        public static final String NAVIGATION_BAR_MENU_ARROW_KEYS = "navigation_bar_menu_arrow_keys";
+
     }
 
     /**
@@ -4567,6 +4575,12 @@ public final class Settings {
          * No longer supported.
          */
         public static final String PARENTAL_CONTROL_REDIRECT_URL = "parental_control_redirect_url";
+
+        /**
+         * Known good originating source sms addresses
+         * @hide
+         */
+        public static final String PROTECTED_SMS_ADDRESSES = "protected_sms_addresses";
 
         /**
          * Settings classname to launch when Settings is clicked from All
