@@ -338,7 +338,7 @@ public class TorchService extends ITorchService.Stub {
                     }
                 }
                 try {
-                    mFlashDeviceWriter.write(enabled ? mValueOn : mValueOff);
+                    mFlashDeviceWriter.write(String.valueOf(enabled ? mValueOn : mValueOff));
                     mFlashDeviceWriter.flush();
                     if (!enabled) {                        
                         mFlashDeviceWriter.close();
